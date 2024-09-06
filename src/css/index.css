@@ -16,6 +16,7 @@ body {
     transition: background-color 0.3s ease;
     background-color: transparent;
     padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 .header.scrolled {
     background-color: #ffffff44; 
@@ -137,4 +138,117 @@ body {
     padding: 0.5rem 1rem;
     backdrop-filter: blur(5px);
     bottom: -10px;
+}
+
+.ventajas {
+    background-color: #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ventajas_title {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    text-align: center;
+}
+.ventajas_title h2 {
+    font-size: 2.5rem;
+    color: #191919;
+    margin-bottom: 1rem;
+}
+.ventajas_title p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+.ventajas_title span {
+    color: transparent;
+    background: linear-gradient(45deg, #8B3DFF, #B450E0);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.ventajas_body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 100rem;
+}
+.ventajas_left {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 50%;
+    padding: 1rem 2rem;
+}
+.ventajas_left h2{
+    font-size: 1.5rem;
+    color: #191919;
+    margin-bottom: 1rem;
+}
+.ventajas_left p{
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+.ventajas_left_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.ventaja_card {
+    border: 1px solid #f0f0f0;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ventaja_card h2 {
+    font-size: 1.2rem;
+    color: #191919;
+}
+
+.ventaja_card:hover {
+    background-color: #f0f0f0;
+}
+.ventaja_card.active {
+    background-color: #8B3DFF; 
+    color: #fff; 
+}
+.ventaja_card.active h2 {
+    color: #fff; 
+}
+.ventaja_card.active p {
+    color: #fff; 
+}
+.ventajas_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+
+.ventaja_picture {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.ventaja_picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
 }

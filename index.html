@@ -39,21 +39,40 @@
     </main>
 
     <section class="video">
-        <video class="video_container" >
+        <video class="video_container" controls >
             <source src="./src/assets/videoplayback.mp4" type="video/mp4">
         </video>
         <p>Ve el video para ver las ventajas de hook</p>
     </section>
 
     <section class="ventajas">
-        <div>
-            <h2>Optimiza tu hotel con facilidad</h2>
+        <div class="ventajas_title">
+            <h2>Optimiza tu <span>hotel</span> con facilidad.</h2>
             <p>Herramientas avanzadas para mejorar la gestión de reservas, habitaciones y reportes.</p>
         </div>
-        <div>
-            <div>
+        <div class="ventajas_body">
+            <div class="ventajas_left">
                 <h2>Características principales</h2>
                 <p>Simplifica la gestión de tu hotel con nuestras soluciones integradas.</p>
+                <div class="ventajas_left_cards">
+                    <div class="ventaja_card" data-image="./src/assets/ventaja_1.jpg">
+                        <h2>Gestión de Reservas.</h2>
+                        <p>Administra reservas en tiempo real.</p>
+                    </div>
+                    <div class="ventaja_card"  data-image="./src/assets/ventaja_2.jpg">
+                        <h2>Control de Habitaciones</h2>
+                        <p>Monitorea el estado de cada habitación.</p>
+                    </div>
+                    <div class="ventaja_card" data-image="./src/assets/ventaja_3.jpg">
+                        <h2>Reportes y Análisis</h2>
+                        <p>Genere reportes detallados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ventajas_right" id="ventajasRight">
+                <picture class="ventaja_picture">
+                    <img id="ventajaPictureImage"  src="./src/assets/gallo.jpg"/>
+                </picture>
             </div>
         </div>
     </section>

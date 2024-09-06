@@ -12,3 +12,17 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.querySelectorAll('.ventaja_card').forEach(card => {
+    card.addEventListener('click', function() {
+        // Elimina la clase 'active' de todas las tarjetas
+        document.querySelectorAll('.ventaja_card').forEach(c => c.classList.remove('active'));
+        
+        // Agrega la clase 'active' a la tarjeta seleccionada
+        this.classList.add('active');
+
+        // Cambia la imagen en 'ventaja_picture'
+        const newImage = this.getAttribute('data-image');
+        document.getElementById('ventajaPictureImage').src = newImage;
+    });
+});
