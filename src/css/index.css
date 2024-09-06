@@ -252,3 +252,14 @@ body {
     object-fit: cover;
     border-radius: 0.5rem;
 }
+
+.works {
+    background: conic-gradient(from 360deg at 50% 50%, #8b3dff,20% rgba(180,80,224,1));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 0;
+    max-width: 60rem;
+}
