@@ -139,7 +139,70 @@
         <p>
             Nos enorgullece ser la elección de confianza para hoteles en todo México. Ofrecemos soluciones diseñadas para mejorar la experiencia de gestión y garantizar un servicio excepcional para los huéspedes.
         </p>
+        <div class="trusted_imgs" >
+            <img class="trusted_img" src="./src/assets/hotel_1.svg"/>
+            <img class="trusted_img" src="./src/assets/hotel_1.svg"/>
+            <img class="trusted_img" src="./src/assets/hotel_1.svg"/>
+            <img class="trusted_img" src="./src/assets/hotel_1.svg"/>
+        </div>
     </section>
+
+    <section class="contact">
+        <div class="contact_title">
+            <h2>Envíanos un Correo</h2>
+            <p>¿Tienes alguna pregunta o necesitas más información? Completa el formulario y nos pondremos en contacto contigo.</p>
+        </div>
+        <div class="contact_form">
+            <form action="your-server-side-script.php" method="post">
+                <div class="form_group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form_group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form_group">
+                    <label for="subject">Asunto:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form_group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_section">
+                <h2>Sobre Nosotros</h2>
+                <p>Descubre más sobre nuestra empresa y cómo estamos mejorando la gestión hotelera.</p>
+                <!-- <a href="/about.html">Leer más</a> -->
+            </div>
+            <div class="footer_section">
+                <h2>Contacto</h2>
+                <p>Estamos aquí para ayudarte. Si tienes alguna pregunta, no dudes en contactarnos.</p>
+                <ul>
+                    <li><a href="mailto:info@hook.com">info@hook.com</a></li>
+                    <li><a href="tel:+123456789">+1 234 567 89</a></li>
+                    <!-- <li><a href="/contact.html">Formulario de Contacto</a></li> -->
+                </ul>
+            </div>
+            <div class="footer_section">
+                <h2>Síguenos</h2>
+                <ul class="social_media">
+                    <li><a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="./src/assets/facebook.svg" alt="Facebook"/></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>&copy; 2024 Hook. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
     <script src="./src/javascript/script.js"></script>
 </body>
 </html>
