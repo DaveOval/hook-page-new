@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hook</title>
+    <title>Hook - Solución Integral para la Gestión Hotelera</title>
+    <meta name="description" content="Optimiza la gestión de tu hotel con Hook. Ofrecemos una solución integral para administración, reservas, y operaciones, mejorando la experiencia de tus huéspedes y maximizando tu eficiencia.">
     <link rel="stylesheet" href="./src/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="shortcut icon" href="./hook.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
-    <header class="header">
+    <header class="header" >
         <div class="header_container">
             <picture class="header_container_img">
-                <img src="./hook.png"/>
+                <img src="./hook.png" alt="Logo de Hook" loading="lazy"/>
             </picture>
 
-            <a class="header_container_btn" href="/index.html">
+            <a class="header_container_btn" href="#contact" aria-label="Contactar a Hook">
                 Contactanos
                 <svg width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"/>
@@ -30,15 +32,15 @@
 
     </header>
 
-    <main class="hero">
+    <main class="hero" data-aos="fade-uo">
         <h1>Mejora la gestión de tu hotel con <span>Hook</span></h1>
         <p>Optimiza la administración, reservas y operaciones de tu hotel con nuestra solución integral, diseñada para mejorar la experiencia de tus huéspedes y maximizar tu eficiencia.</p>
-        <a>
+        <a href="#more-info">
             Más información
         </a>
     </main>
 
-    <section class="video">
+    <section class="video" data-aos="fade-left">
         <video class="video_container" controls >
             <source src="./src/assets/videoplayback.mp4" type="video/mp4">
         </video>
@@ -48,32 +50,32 @@
     </section>
 
     <section class="ventajas">
-        <div class="ventajas_title">
+        <div class="ventajas_title" data-aos="fade-up">
             <h2>Optimiza tu <span>hotel</span> con facilidad.</h2>
             <p>Herramientas avanzadas para mejorar la gestión de reservas, habitaciones y reportes.</p>
         </div>
         <div class="ventajas_body">
-            <div class="ventajas_left">
+            <div class="ventajas_left"  data-aos="fade-right">
                 <h2>Características principales</h2>
                 <p>Simplifica la gestión de tu hotel con nuestras soluciones integradas.</p>
                 <div class="ventajas_left_cards">
-                    <div class="ventaja_card" data-image="./src/assets/ventaja_1.jpg">
+                    <div class="ventaja_card" data-image="./src/assets/hook-reservation.png">
                         <h2>Gestión de Reservas.</h2>
                         <p>Administra reservas en tiempo real.</p>
                     </div>
-                    <div class="ventaja_card"  data-image="./src/assets/ventaja_2.jpg">
+                    <div class="ventaja_card"  data-image="./src/assets/hook-room-admin.png">
                         <h2>Control de Habitaciones</h2>
                         <p>Monitorea el estado de cada habitación.</p>
                     </div>
-                    <div class="ventaja_card" data-image="./src/assets/ventaja_3.jpg">
+                    <div class="ventaja_card" data-image="./src/assets/hook-report.png">
                         <h2>Reportes y Análisis</h2>
                         <p>Genere reportes detallados.</p>
                     </div>
                 </div>
             </div>
-            <div class="ventajas_right" id="ventajasRight">
+            <div class="ventajas_right" id="ventajasRight" data-aos="fade-left">
                 <picture class="ventaja_picture">
-                    <img id="ventajaPictureImage"  src="./src/assets/gallo.jpg"/>
+                    <img id="ventajaPictureImage"  src="./src/assets/hook-menu.png" alt="Imagen de Ventaja" loading="lazy"/>
                 </picture>
             </div>
         </div>
@@ -87,44 +89,44 @@
             <p>Descubre cómo nuestro sistema facilita la gestión de reservas y la optimización del servicio.</p>
         </div>
         <div class="works_cards">
-            <div class="works_card">
+            <div class="works_card" data-aos="fade-right">
                 <picture>
-                    <img src="./src/assets/real_time_reservation.svg"/>
+                    <img src="./src/assets/real_time_reservation.svg" alt="Reservas en Tiempo Real" loading="lazy"/>
                 </picture>
                 <h2>Reservas en Tiempo Real</h2>
                 <p>Gestiona reservas al instante y sin complicaciones.</p>
             </div>
-            <div class="works_card">
+            <div class="works_card" data-aos="fade-left">
                 <picture>
-                    <img src="./src/assets/analysis.svg"/>
+                    <img src="./src/assets/analysis.svg" alt="Análisis de Disponibilidad" loading="lazy"/>
                 </picture>
                 <h2>Análisis de Disponibilidad</h2>
                 <p>Consulta y ajusta la disponibilidad de habitaciones.</p>
             </div>
-            <div class="works_card">
+            <div class="works_card" data-aos="fade-right">
                 <picture>
-                    <img src="./src/assets/inventory.svg"/>
+                    <img src="./src/assets/inventory.svg" alt="Gestión de Inventario" loading="lazy"/>
                 </picture>
                 <h2>Gestión de Inventario</h2>
                 <p>Controla y ajusta tu inventario de manera fácil.</p>
             </div>
-            <div class="works_card">
+            <div class="works_card" data-aos="fade-left">
                 <picture>
-                    <img src="./src/assets/fee.svg"/>
+                    <img src="./src/assets/fee.svg" alt="Gestión de Tarifas" loading="lazy"/>
                 </picture>
                 <h2>Gestión de Tarifas</h2>
                 <p>Actualiza tarifas rápidamente para maximizar ingresos.</p>
             </div>
-            <div class="works_card">
+            <div class="works_card" data-aos="fade-right">
                 <picture>
-                    <img src="./src/assets/report.svg"/>
+                    <img src="./src/assets/report.svg" alt="Informes Personalizados" loading="lazy"/>
                 </picture>
                 <h2>Informes Personalizados</h2>
                 <p>Obtén reportes claros para decisiones rápidas.</p>
             </div>
-            <div class="works_card">
+            <div class="works_card" data-aos="fade-left">
                 <picture>
-                    <img src="./src/assets/operation.svg"/>
+                    <img src="./src/assets/operation.svg" alt="Optimización de Operaciones" loading="lazy"/>
                 </picture>
                 <h2>Optimización de Operaciones</h2>
                 <p>Mejora tus procesos con herramientas eficientes.</p>
@@ -132,7 +134,7 @@
         </div>
     </section>
 
-    <section class="trusted">
+    <section class="trusted" data-aos="fade-up">
         <h2>
             Con la confianza de hoteles en todo México.
         </h2>
@@ -140,14 +142,14 @@
             Nos enorgullece ser la elección de confianza para hoteles en todo México. Ofrecemos soluciones diseñadas para mejorar la experiencia de gestión y garantizar un servicio excepcional para los huéspedes.
         </p>
         <div class="trusted_imgs" >
-            <img class="trusted_img" src="./src/assets/hotel_1.svg"/>
-            <img class="trusted_img" src="./src/assets/hotel_1.svg"/>
-            <img class="trusted_img" src="./src/assets/hotel_1.svg"/>
-            <img class="trusted_img" src="./src/assets/hotel_1.svg"/>
+            <img class="trusted_img" src="./src/assets/hotel_1.svg" loading="lazy" alt="trusted" />
+            <img class="trusted_img" src="./src/assets/hotel_1.svg" loading="lazy" alt="trusted" />
+            <img class="trusted_img" src="./src/assets/hotel_1.svg" loading="lazy" alt="trusted" />
+            <img class="trusted_img" src="./src/assets/hotel_1.svg" loading="lazy" alt="trusted" />
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact" data-aos="fade-up">
         <div class="contact_title">
             <h2>Envíanos un Correo</h2>
             <p>¿Tienes alguna pregunta o necesitas más información? Completa el formulario y nos pondremos en contacto contigo.</p>
@@ -194,7 +196,7 @@
             <div class="footer_section">
                 <h2>Síguenos</h2>
                 <ul class="social_media">
-                    <li><a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="./src/assets/facebook.svg" alt="Facebook"/></a></li>
+                    <li><a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="./src/assets/facebook.svg" alt="Facebook" loading="lazy"/></a></li>
                 </ul>
             </div>
         </div>
@@ -204,5 +206,9 @@
     </footer>
     
     <script src="./src/javascript/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
