@@ -130,14 +130,17 @@ body {
 .video p {
     background-color: #f0f0f0;
     position: absolute;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     color: #000;
     z-index: 10;
     font-weight: 700;
     border-radius: 15px;
     padding: 0.5rem 1rem;
     backdrop-filter: blur(5px);
-    bottom: -10px;
+    bottom: -25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
 }
 
 .ventajas {
@@ -254,12 +257,87 @@ body {
 }
 
 .works {
-    background: conic-gradient(from 360deg at 50% 50%, #8b3dff,20% rgba(180,80,224,1));
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding: 2rem 0;
+    margin: 0 auto;
+    background-color: #191919;
+}
+.works_title {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #FBFBFB;
+    gap: 1rem;
+    width: 100%;
+}
+.works_title h2 {
+    font-size: 2.5rem;
+    width: 80%;
+    margin: auto;
     max-width: 60rem;
+
+}
+.works_title p {
+    font-size: 1.2rem;
+    color: #666;
+    width: 80%;
+    margin: auto;
+    max-width: 60rem;
+}
+.works_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 60rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+.works_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    background-color: #FBFBFB;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 60rem;
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+}
+.works_card h2 {
+    font-size: 1.2rem;
+    color: #191919;
+}
+.works_card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+.works_card picture {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #8B3DFF, #B450E0);
+    object-fit: contain;
+}
+.works_card img {
+    width: 80%;
+    height: 80%;
 }
